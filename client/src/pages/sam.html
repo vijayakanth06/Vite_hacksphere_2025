@@ -1,0 +1,1269 @@
+<div> <div class="flex flex-col min-h-screen">
+    <header id="siteHeader" class="header-five sticky-header sticky -top-[1px] z-20 lg:relative w-full h-16 lg:h-auto">
+        <div class="z-20 w-full transition-all duration-200 ease-in-out innerSticky lg:w-full body-font bg-brand-light">
+            <div class="w-full transition-all duration-200 ease-in-out top-bar-search hidden lg:max-w-[600px] absolute z-30 px-4 md:px-6 top-1">
+                <div class="overlay cursor-pointer invisible w-full h-full opacity-0 flex top-0 ltr:left-0 rtl:right-0 transition-all duration-300 fixed"></div>
+                <div class="relative z-30 flex flex-col justify-center w-full shrink-0">
+                    <div class="flex flex-col w-full mx-auto">
+                        <form class="relative flex w-full rounded-md" noValidate="" role="search">
+                            <label for="mobile-search" class="flex flex-1 items-center py-0.5">
+                                <input id="mobile-search" class="text-heading outline-none w-full h-[52px] ltr:pl-5 rtl:pr-5 md:ltr:pl-6 md:rtl:pr-6 ltr:pr-14 rtl:pl-14 md:ltr:pr-16 md:rtl:pl-16 bg-brand-light text-brand-dark text-sm lg:text-15px rounded-md transition-all duration-200 focus:border-brand focus:ring-0 placeholder:text-brand-dark/50 border border-border-base" placeholder="What are you looking..." aria-label="mobile-search" autoComplete="off" name="search" value=""/>
+                            </label>
+                            <span class="absolute top-0 flex items-center justify-center h-full w-14 md:w-16 ltr:right-0 rtl:left-0 shrink-0 focus:outline-none">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-5 h-5 text-brand-dark text-opacity-40">
+                                    <path d="M19.0144 17.9256L13.759 12.6703C14.777 11.4129 15.3899 9.81507 15.3899 8.07486C15.3899 4.04156 12.1081 0.759766 8.07483 0.759766C4.04152 0.759766 0.759766 4.04152 0.759766 8.07483C0.759766 12.1081 4.04156 15.3899 8.07486 15.3899C9.81507 15.3899 11.4129 14.777 12.6703 13.759L17.9256 19.0144C18.0757 19.1645 18.2728 19.24 18.47 19.24C18.6671 19.24 18.8642 19.1645 19.0144 19.0144C19.3155 18.7133 19.3155 18.2266 19.0144 17.9256ZM8.07486 13.8499C4.89009 13.8499 2.2998 11.2596 2.2998 8.07483C2.2998 4.89006 4.89009 2.29976 8.07486 2.29976C11.2596 2.29976 13.8499 4.89006 13.8499 8.07483C13.8499 11.2596 11.2596 13.8499 8.07486 13.8499Z" fill="currentColor"></path>
+                                </svg>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between h-16 py-3 border-b top-bar lg:h-auto border-border-base mx-auto max-w-[1920px] px-4 md:px-6 lg:px-8 2xl:px-10">
+                <a class="inline-block focus:outline-none max-w-[131px] w-full logo -mt-1.5 md:-mt-1 md:mx-auto ltr:pl-3 rtl:pr-3 md:ltr:pl-0 md:rtl:pr-0 lg:mx-0" href="/en">
+                    <img alt="Farm2Bag" loading="eager" width="1800" height="600" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=3840&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=3840&amp;q=75"/>
+                </a>
+                <div class="w-full transition-all duration-200 ease-in-out hidden lg:flex lg:max-w-[650px] 2xl:max-w-[800px] lg:mx-8">
+                    <div class="overlay cursor-pointer invisible w-full h-full opacity-0 flex top-0 ltr:left-0 rtl:right-0 transition-all duration-300 fixed"></div>
+                    <div class="relative z-30 flex flex-col justify-center w-full shrink-0">
+                        <div class="flex flex-col w-full mx-auto">
+                            <form class="relative flex w-full rounded-md" noValidate="" role="search">
+                                <label for="top-bar-search" class="flex flex-1 items-center py-0.5">
+                                    <input id="top-bar-search" class="text-heading outline-none w-full h-[52px] ltr:pl-5 rtl:pr-5 md:ltr:pl-6 md:rtl:pr-6 ltr:pr-14 rtl:pl-14 md:ltr:pr-16 md:rtl:pl-16 bg-brand-light text-brand-dark text-sm lg:text-15px rounded-md transition-all duration-200 focus:border-brand focus:ring-0 placeholder:text-brand-dark/50 bg-fill-one" placeholder="What are you looking..." aria-label="top-bar-search" autoComplete="off" name="search" value=""/>
+                                </label>
+                                <span class="absolute top-0 flex items-center justify-center h-full w-14 md:w-16 ltr:right-0 rtl:left-0 shrink-0 focus:outline-none">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-5 h-5 text-brand-dark text-opacity-40">
+                                        <path d="M19.0144 17.9256L13.759 12.6703C14.777 11.4129 15.3899 9.81507 15.3899 8.07486C15.3899 4.04156 12.1081 0.759766 8.07483 0.759766C4.04152 0.759766 0.759766 4.04152 0.759766 8.07483C0.759766 12.1081 4.04156 15.3899 8.07486 15.3899C9.81507 15.3899 11.4129 14.777 12.6703 13.759L17.9256 19.0144C18.0757 19.1645 18.2728 19.24 18.47 19.24C18.6671 19.24 18.8642 19.1645 19.0144 19.0144C19.3155 18.7133 19.3155 18.2266 19.0144 17.9256ZM8.07486 13.8499C4.89009 13.8499 2.2998 11.2596 2.2998 8.07483C2.2998 4.89006 4.89009 2.29976 8.07486 2.29976C11.2596 2.29976 13.8499 4.89006 13.8499 8.07483C13.8499 11.2596 11.2596 13.8499 8.07486 13.8499Z" fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ltr:ml-auto rtl:mr-auto md:ltr:ml-0 md:rtl:mr-0">
+                    <div class="flex shrink-0 -mx-2.5 xl:-mx-3.5">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden lg:flex xl:mx-3.5 mx-2.5 text-brand-dark text-opacity-40 cursor-pointer">
+                            <path d="M11 19.8C10.7181 19.8 10.4463 19.698 10.2345 19.5126C9.43467 18.8138 8.6635 18.1572 7.98312 17.5779L7.97964 17.5749C5.98487 15.8765 4.26231 14.4098 3.06378 12.9649C1.72401 11.3497 1.09998 9.81825 1.09998 8.14521C1.09998 6.51972 1.65785 5.0201 2.67072 3.9224C3.69567 2.81172 5.10206 2.20001 6.63126 2.20001C7.7742 2.20001 8.82091 2.56103 9.74223 3.27296C10.2072 3.63232 10.6287 4.07212 11 4.58513C11.3714 4.07212 11.7927 3.63232 12.2579 3.27296C13.1792 2.56103 14.2259 2.20001 15.3688 2.20001C16.8979 2.20001 18.3044 2.81172 19.3294 3.9224C20.3423 5.0201 20.9 6.51972 20.9 8.14521C20.9 9.81825 20.2761 11.3497 18.9363 12.9648C17.7378 14.4098 16.0154 15.8763 14.0209 17.5746C13.3393 18.1547 12.5669 18.8125 11.7653 19.5129C11.5536 19.698 11.2817 19.8 11 19.8V19.8ZM6.63126 3.35884C5.42987 3.35884 4.32621 3.83788 3.52331 4.70783C2.70848 5.59091 2.25968 6.81161 2.25968 8.14521C2.25968 9.55231 2.78311 10.8107 3.95671 12.2255C5.09103 13.5931 6.77825 15.0296 8.73178 16.693L8.7354 16.696C9.41836 17.2776 10.1925 17.9368 10.9983 18.6407C11.8089 17.9354 12.5843 17.2751 13.2686 16.6927C15.222 15.0293 16.9091 13.5931 18.0434 12.2255C19.2168 10.8107 19.7403 9.55231 19.7403 8.14521C19.7403 6.81161 19.2915 5.59091 18.4766 4.70783C17.6739 3.83788 16.5701 3.35884 15.3688 3.35884C14.4888 3.35884 13.6807 3.63835 12.9673 4.18954C12.3314 4.68096 11.8885 5.30218 11.6288 5.73686C11.4953 5.96038 11.2603 6.0938 11 6.0938C10.7397 6.0938 10.5046 5.96038 10.3711 5.73686C10.1116 5.30218 9.66867 4.68096 9.03269 4.18954C8.31923 3.63835 7.5112 3.35884 6.63126 3.35884V3.35884Z" fill="#8C969F" stroke="#8C969F" stroke-width="0.2"></path>
+                        </svg>
+                        <!--$!-->
+                        <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+                        <!--/$-->
+                        <div class="items-center hidden lg:flex shrink-0 xl:mx-3.5 mx-2.5">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-brand-dark text-opacity-40">
+                                <path d="M20.9001 11C20.9001 5.52836 16.4723 1.09998 11.0001 1.09998C5.52848 1.09998 1.1001 5.52775 1.1001 11C1.1001 16.4231 5.49087 20.9 11.0001 20.9C16.4867 20.9 20.9001 16.448 20.9001 11ZM11.0001 2.26013C15.8193 2.26013 19.7399 6.1808 19.7399 11C19.7399 12.7629 19.2156 14.4573 18.2432 15.8926C14.3386 11.6924 7.66873 11.6849 3.75698 15.8926C2.78459 14.4573 2.26025 12.7629 2.26025 11C2.26025 6.1808 6.18092 2.26013 11.0001 2.26013ZM4.48056 16.8201C7.95227 12.926 14.0488 12.9269 17.5195 16.8201C14.0361 20.7172 7.96541 20.7184 4.48056 16.8201Z" fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
+                                <path d="M11 11.5801C12.9191 11.5801 14.4805 10.0187 14.4805 8.09961V6.93945C14.4805 5.02036 12.9191 3.45898 11 3.45898C9.08091 3.45898 7.51953 5.02036 7.51953 6.93945V8.09961C7.51953 10.0187 9.08091 11.5801 11 11.5801ZM8.67969 6.93945C8.67969 5.65996 9.7205 4.61914 11 4.61914C12.2795 4.61914 13.3203 5.65996 13.3203 6.93945V8.09961C13.3203 9.3791 12.2795 10.4199 11 10.4199C9.7205 10.4199 8.67969 9.3791 8.67969 8.09961V6.93945Z" fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
+                            </svg>
+                            <!--$!-->
+                            <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+                            <!--/$-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden navbar lg:block bg-brand-light">
+                <div class="h-20 flex justify-between items-center py-2.5 mx-auto max-w-[1920px] px-4 md:px-6 lg:px-8 2xl:px-10">
+                    <a class="inline-block focus:outline-none max-w-[131px] w-full !w-0 transition-all duration-200 ease-in-out opacity-0 navbar-logo" href="/en">
+                        <img alt="Farm2Bag" loading="eager" width="1800" height="600" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=3840&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=3840&amp;q=75"/>
+                    </a>
+                    <div class="flex items-center ltr:ml-auto rtl:mr-auto">
+                        <div class="flex items-center w-0 py-4 overflow-hidden transition-all duration-200 ease-in-out opacity-0 navbar-right">
+                            <button type="button" aria-label="Search Toggle" title="Search toggle" class="flex items-center justify-center w-12 h-full transition duration-200 ease-in-out outline-none ltr:mr-6 rtl:ml-6 md:w-14 hover:text-heading focus:outline-none">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="w-[22px] h-[22px] text-brand-dark text-opacity-40">
+                                    <path d="M19.0144 17.9256L13.759 12.6703C14.777 11.4129 15.3899 9.81507 15.3899 8.07486C15.3899 4.04156 12.1081 0.759766 8.07483 0.759766C4.04152 0.759766 0.759766 4.04152 0.759766 8.07483C0.759766 12.1081 4.04156 15.3899 8.07486 15.3899C9.81507 15.3899 11.4129 14.777 12.6703 13.759L17.9256 19.0144C18.0757 19.1645 18.2728 19.24 18.47 19.24C18.6671 19.24 18.8642 19.1645 19.0144 19.0144C19.3155 18.7133 19.3155 18.2266 19.0144 17.9256ZM8.07486 13.8499C4.89009 13.8499 2.2998 11.2596 2.2998 8.07483C2.2998 4.89006 4.89009 2.29976 8.07486 2.29976C11.2596 2.29976 13.8499 4.89006 13.8499 8.07483C13.8499 11.2596 11.2596 13.8499 8.07486 13.8499Z" fill="currentColor"></path>
+                                </svg>
+                            </button>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden lg:flex xl:mx-3.5 mx-2.5 text-brand-dark text-opacity-40 cursor-pointer">
+                                <path d="M11 19.8C10.7181 19.8 10.4463 19.698 10.2345 19.5126C9.43467 18.8138 8.6635 18.1572 7.98312 17.5779L7.97964 17.5749C5.98487 15.8765 4.26231 14.4098 3.06378 12.9649C1.72401 11.3497 1.09998 9.81825 1.09998 8.14521C1.09998 6.51972 1.65785 5.0201 2.67072 3.9224C3.69567 2.81172 5.10206 2.20001 6.63126 2.20001C7.7742 2.20001 8.82091 2.56103 9.74223 3.27296C10.2072 3.63232 10.6287 4.07212 11 4.58513C11.3714 4.07212 11.7927 3.63232 12.2579 3.27296C13.1792 2.56103 14.2259 2.20001 15.3688 2.20001C16.8979 2.20001 18.3044 2.81172 19.3294 3.9224C20.3423 5.0201 20.9 6.51972 20.9 8.14521C20.9 9.81825 20.2761 11.3497 18.9363 12.9648C17.7378 14.4098 16.0154 15.8763 14.0209 17.5746C13.3393 18.1547 12.5669 18.8125 11.7653 19.5129C11.5536 19.698 11.2817 19.8 11 19.8V19.8ZM6.63126 3.35884C5.42987 3.35884 4.32621 3.83788 3.52331 4.70783C2.70848 5.59091 2.25968 6.81161 2.25968 8.14521C2.25968 9.55231 2.78311 10.8107 3.95671 12.2255C5.09103 13.5931 6.77825 15.0296 8.73178 16.693L8.7354 16.696C9.41836 17.2776 10.1925 17.9368 10.9983 18.6407C11.8089 17.9354 12.5843 17.2751 13.2686 16.6927C15.222 15.0293 16.9091 13.5931 18.0434 12.2255C19.2168 10.8107 19.7403 9.55231 19.7403 8.14521C19.7403 6.81161 19.2915 5.59091 18.4766 4.70783C17.6739 3.83788 16.5701 3.35884 15.3688 3.35884C14.4888 3.35884 13.6807 3.63835 12.9673 4.18954C12.3314 4.68096 11.8885 5.30218 11.6288 5.73686C11.4953 5.96038 11.2603 6.0938 11 6.0938C10.7397 6.0938 10.5046 5.96038 10.3711 5.73686C10.1116 5.30218 9.66867 4.68096 9.03269 4.18954C8.31923 3.63835 7.5112 3.35884 6.63126 3.35884V3.35884Z" fill="#8C969F" stroke="#8C969F" stroke-width="0.2"></path>
+                            </svg>
+                            <!--$!-->
+                            <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+                            <!--/$-->
+                            <!--$!-->
+                            <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+                            <!--/$-->
+                            <div class="flex items-center shrink-0 ltr:ml-7 rtl:mr-7">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-brand-dark text-opacity-40">
+                                    <path d="M20.9001 11C20.9001 5.52836 16.4723 1.09998 11.0001 1.09998C5.52848 1.09998 1.1001 5.52775 1.1001 11C1.1001 16.4231 5.49087 20.9 11.0001 20.9C16.4867 20.9 20.9001 16.448 20.9001 11ZM11.0001 2.26013C15.8193 2.26013 19.7399 6.1808 19.7399 11C19.7399 12.7629 19.2156 14.4573 18.2432 15.8926C14.3386 11.6924 7.66873 11.6849 3.75698 15.8926C2.78459 14.4573 2.26025 12.7629 2.26025 11C2.26025 6.1808 6.18092 2.26013 11.0001 2.26013ZM4.48056 16.8201C7.95227 12.926 14.0488 12.9269 17.5195 16.8201C14.0361 20.7172 7.96541 20.7184 4.48056 16.8201Z" fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
+                                    <path d="M11 11.5801C12.9191 11.5801 14.4805 10.0187 14.4805 8.09961V6.93945C14.4805 5.02036 12.9191 3.45898 11 3.45898C9.08091 3.45898 7.51953 5.02036 7.51953 6.93945V8.09961C7.51953 10.0187 9.08091 11.5801 11 11.5801ZM8.67969 6.93945C8.67969 5.65996 9.7205 4.61914 11 4.61914C12.2795 4.61914 13.3203 5.65996 13.3203 6.93945V8.09961C13.3203 9.3791 12.2795 10.4199 11 10.4199C9.7205 10.4199 8.67969 9.3791 8.67969 8.09961V6.93945Z" fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
+                                </svg>
+                                <!--$!-->
+                                <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+                                <!--/$-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="relative flex-grow" style="-webkit-overflow-scrolling:touch">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div class="mx-auto max-w-[1920px] px-4 md:px-6 lg:px-8 2xl:px-10">
+                <div class="heightFull my-3 md:my-4 lg:mt-0 lg:mb-5 xl:mb-6">
+                    <div class="grid gap-4 2xl:gap-5 3xl:gap-7 grid-cols-12 2xl:gap-5">
+                        <div class="mx-auto w-full col-span-6">
+                            <a class="h-full group flex justify-center relative overflow-hidden" href="/en/search">
+                                <img alt="Try Fresh Healthy Breakfast on Morning" width="965" height="500" decoding="async" data-nimg="1" class="bg-fill-thumbnail object-cover w-full" style="color:transparent" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2FFarm2bag%20Banner.jpg&amp;w=1080&amp;q=100 1x, /_next/image?url=%2Fassets%2Fimages%2Fbanner%2FFarm2bag%20Banner.jpg&amp;w=2048&amp;q=100 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2FFarm2bag%20Banner.jpg&amp;w=2048&amp;q=100"/>
+                                <div class="absolute top-0 block w-1/2 h-full transform -skew-x-12 ltr:-left-full rtl:-right-full z-5 bg-gradient-to-r from-transparent to-white opacity-30 group-hover:animate-shine"></div>
+                            </a>
+                        </div>
+                        <div class="mx-auto w-full col-span-6">
+                            <a target="_blank" rel="noopener noreferrer" class="h-full group flex justify-center relative overflow-hidden" href="https://www.juice2bag.com">
+                                <img alt="New arrivals!" width="965" height="500" decoding="async" data-nimg="1" class="bg-fill-thumbnail object-cover w-full" style="color:transparent" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2FJuice2Bag%20Banner.jpg&amp;w=1080&amp;q=100 1x, /_next/image?url=%2Fassets%2Fimages%2Fbanner%2FJuice2Bag%20Banner.jpg&amp;w=2048&amp;q=100 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2FJuice2Bag%20Banner.jpg&amp;w=2048&amp;q=100"/>
+                                <div class="absolute top-0 block w-1/2 h-full transform -skew-x-12 ltr:-left-full rtl:-right-full z-5 bg-gradient-to-r from-transparent to-white opacity-30 group-hover:animate-shine"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12 lg:mb-14 xl:mb-16 2xl:mb-20">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
+                        <div class="grid grid-rows-1 grid-flow-col gap-1" style="background-color:#f7f6f2;padding:1.25rem;border-radius:8px;width:100%;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1)">
+                            <div class="row-span-1 col-span-9 mr-1">
+                                <h3 class="text-brand-dark text-base lg:text-[16px] lg:leading-6 font-bold mb-1 lg:mb-1 font-body">Daily Fresh</h3>
+                                <p class="description" style="color:#4a4a4a;font-weight:600;font-size:0.6rem">Here &#x27;s offers fresh, farm-sourced essentials, including milk, water, vegetables, and fruits get quick.</p>
+                            </div>
+                            <div class="image-container row-span-1 col-span-3" style="aspect-ratio:1/1;background-color:white;border-radius:50%;display:grid;margin:0.25rem;align-items:center;place-items:center;justify-content:center;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);width:4.5rem;height:4.5rem">
+                                <img src="/assets/images/bundle/Daily fresh.jpg" alt="bundle-title-one" style="border-radius:50%;width:100%;height:100%;object-fit:cover"/>
+                            </div>
+                        </div>
+                        <div class="grid grid-rows-1 grid-flow-col gap-1" style="background-color:#f7f6f2;padding:1.25rem;border-radius:8px;width:100%;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1)">
+                            <div class="row-span-1 col-span-9 mr-1">
+                                <h3 class="text-brand-dark text-base lg:text-[16px] lg:leading-6 font-bold mb-1 lg:mb-1 font-body">Seasonal</h3>
+                                <p class="description" style="color:#4a4a4a;font-weight:600;font-size:0.6rem">Seasonal vegetables, fruits, and grains are available affordably in one click.</p>
+                            </div>
+                            <div class="image-container row-span-1 col-span-3" style="aspect-ratio:1/1;background-color:white;border-radius:50%;display:grid;margin:0.25rem;align-items:center;place-items:center;justify-content:center;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);width:4.5rem;height:4.5rem">
+                                <img src="/assets/images/bundle/Seasonal (2).jpg" alt="bundle-title-two" style="border-radius:50%;width:100%;height:100%;object-fit:cover"/>
+                            </div>
+                        </div>
+                        <div class="grid grid-rows-1 grid-flow-col gap-1" style="background-color:#f7f6f2;padding:1.25rem;border-radius:8px;width:100%;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1)">
+                            <div class="row-span-1 col-span-9 mr-1">
+                                <h3 class="text-brand-dark text-base lg:text-[16px] lg:leading-6 font-bold mb-1 lg:mb-1 font-body">Combo Bags</h3>
+                                <p class="description" style="color:#4a4a4a;font-weight:600;font-size:0.6rem">Combo bag list offers a week’s worth of nutritious items at a cost-effective price.</p>
+                            </div>
+                            <div class="image-container row-span-1 col-span-3" style="aspect-ratio:1/1;background-color:white;border-radius:50%;display:grid;margin:0.25rem;align-items:center;place-items:center;justify-content:center;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);width:4.5rem;height:4.5rem">
+                                <img src="/assets/images/bundle/Combo Bag.jpg" alt="bundle-title-three" style="border-radius:50%;width:100%;height:100%;object-fit:cover"/>
+                            </div>
+                        </div>
+                        <div class="grid grid-rows-1 grid-flow-col gap-1" style="background-color:#f7f6f2;padding:1.25rem;border-radius:8px;width:100%;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1)">
+                            <div class="row-span-1 col-span-9 mr-1">
+                                <h3 class="text-brand-dark text-base lg:text-[16px] lg:leading-6 font-bold mb-1 lg:mb-1 font-body">Juice 2 Bag</h3>
+                                <p class="description" style="color:#4a4a4a;font-weight:600;font-size:0.6rem">NEERA water, sugarcane juice, coconut water, fresh juice, and instant doorstep delivery!!</p>
+                            </div>
+                            <div class="image-container row-span-1 col-span-3" style="aspect-ratio:1/1;background-color:white;border-radius:50%;display:grid;margin:0.25rem;align-items:center;place-items:center;justify-content:center;box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);width:4.5rem;height:4.5rem">
+                                <img src="/assets/images/bundle/Juice2bag.jpg" alt="bundle-title-four" style="border-radius:50%;width:100%;height:100%;object-fit:cover"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12 md:pt-3 lg:pt-0 3xl:pb-2 sm:mb-14 md:mb-16 xl:mb-24 2xl:mb-16">
+                    <div class="-mt-1.5 pb-0.5 mb-5 xl:mb-6 text-center pb-2 lg:pb-3 xl:pb-4 3xl:pb-7">
+                        <h2 class="text-brand-dark text-lg lg:text-xl xl:text-[22px] xl:leading-8 font-bold font-manrope 3xl:text-[25px] 3xl:leading-9">Category List</h2>
+                        <p class="text-brand-muted text-sm leading-7 lg:text-15px xl:text-base pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3">Explore 1,000+ trusted organic farm products, curated into 30+ categories—shop now!</p>
+                    </div>
+                    <div class="block 2xl:flex justify-center flex-wrap 3xl:-mx-3.5">
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-0-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-0-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-0-diff)" style="fill:url(#category-card-0-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-0-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-0-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-1-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-1-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-1-diff)" style="fill:url(#category-card-1-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-1-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-1-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-2-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-2-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-2-diff)" style="fill:url(#category-card-2-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-2-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-2-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-3-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-3-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-3-diff)" style="fill:url(#category-card-3-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-3-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-3-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-4-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-4-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-4-diff)" style="fill:url(#category-card-4-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-4-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-4-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-5-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-5-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-5-diff)" style="fill:url(#category-card-5-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-5-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-5-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-6-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-6-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-6-diff)" style="fill:url(#category-card-6-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-6-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-6-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-7-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-7-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-7-diff)" style="fill:url(#category-card-7-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-7-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-7-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-8-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-8-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-8-diff)" style="fill:url(#category-card-8-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-8-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-8-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-9-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-9-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-9-diff)" style="fill:url(#category-card-9-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-9-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-9-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-10-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-10-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-10-diff)" style="fill:url(#category-card-10-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-10-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-10-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-11-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-11-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-11-diff)" style="fill:url(#category-card-11-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-11-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-11-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-12-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-12-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-12-diff)" style="fill:url(#category-card-12-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-12-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-12-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-13-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-13-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-13-diff)" style="fill:url(#category-card-13-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-13-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-13-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-14-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-14-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-14-diff)" style="fill:url(#category-card-14-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-14-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-14-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="shrink-0 lg:px-3.5 2xl:w-[12.5%] 3xl:w-1/9 mb-12">
+                            <svg aria-labelledby="category-card-15-aria" role="img" width="180" height="214" viewBox="0 0 180 214" class="w-full h-auto overflow-hidden">
+                                <title id="category-card-15-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#category-card-15-diff)" style="fill:url(#category-card-15-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="category-card-15-diff">
+                                        <circle cx="90" cy="89" r="89"></circle>
+                                        <rect x="30" y="203" rx="5" ry="5" width="118" height="8"></rect>
+                                    </clipPath>
+                                    <linearGradient id="category-card-15-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div id="scrollspyHeading1">
+                    <div class="mb-12 lg:mb-14 xl:mb-16 2xl:mb-20">
+                        <div class="-mt-1.5 pb-0.5 mb-5 xl:mb-6 text-center pb-2 lg:pb-3 xl:pb-4 3xl:pb-7">
+                            <h2 class="text-brand-dark text-lg lg:text-xl xl:text-[22px] xl:leading-8 font-bold font-manrope 3xl:text-[25px] 3xl:leading-9">Fresh daily</h2>
+                            <p class="text-brand-muted text-sm leading-7 lg:text-15px xl:text-base pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3">Order now for fresh and natural , 100 % chemical-free, organic seasonal produce—safe and healthy!</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 md:gap-4 2xl:gap-5">
+                            <svg aria-labelledby="best-sellers-}+0-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+0-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+0-diff)" style="fill:url(#best-sellers-}+0-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+0-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+0-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+1-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+1-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+1-diff)" style="fill:url(#best-sellers-}+1-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+1-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+1-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+2-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+2-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+2-diff)" style="fill:url(#best-sellers-}+2-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+2-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+2-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+3-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+3-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+3-diff)" style="fill:url(#best-sellers-}+3-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+3-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+3-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+4-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+4-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+4-diff)" style="fill:url(#best-sellers-}+4-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+4-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+4-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+5-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+5-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+5-diff)" style="fill:url(#best-sellers-}+5-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+5-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+5-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+6-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+6-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+6-diff)" style="fill:url(#best-sellers-}+6-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+6-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+6-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+7-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+7-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+7-diff)" style="fill:url(#best-sellers-}+7-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+7-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+7-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+8-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+8-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+8-diff)" style="fill:url(#best-sellers-}+8-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+8-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+8-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+9-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+9-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+9-diff)" style="fill:url(#best-sellers-}+9-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+9-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+9-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+10-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+10-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+10-diff)" style="fill:url(#best-sellers-}+10-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+10-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+10-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+11-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+11-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+11-diff)" style="fill:url(#best-sellers-}+11-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+11-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+11-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+12-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+12-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+12-diff)" style="fill:url(#best-sellers-}+12-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+12-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+12-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+13-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+13-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+13-diff)" style="fill:url(#best-sellers-}+13-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+13-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+13-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+14-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+14-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+14-diff)" style="fill:url(#best-sellers-}+14-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+14-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+14-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+15-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+15-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+15-diff)" style="fill:url(#best-sellers-}+15-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+15-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+15-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+16-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+16-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+16-diff)" style="fill:url(#best-sellers-}+16-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+16-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+16-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+17-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+17-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+17-diff)" style="fill:url(#best-sellers-}+17-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+17-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+17-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+18-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+18-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+18-diff)" style="fill:url(#best-sellers-}+18-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+18-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+18-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+19-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+19-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+19-diff)" style="fill:url(#best-sellers-}+19-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+19-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+19-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg aria-labelledby="best-sellers-}+20-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                <title id="best-sellers-}+20-aria">Loading...</title>
+                                <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#best-sellers-}+20-diff)" style="fill:url(#best-sellers-}+20-animated-diff)"></rect>
+                                <defs>
+                                    <clipPath id="best-sellers-}+20-diff">
+                                        <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                        <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                        <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                        <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                        <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                    </clipPath>
+                                    <linearGradient id="best-sellers-}+20-animated-diff" gradientTransform="translate(-2 0)">
+                                        <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                        <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                        <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div id="scrollspyHeading2">
+                    <div class="-mt-2.5 mb-12 lg:mb-14 xl:mb-16 2xl:mb-20 ">
+                        <div class="-mt-1.5 pb-0.5 mb-5 xl:mb-6 text-center pb-2 lg:pb-3 xl:pb-4 3xl:pb-7">
+                            <h2 class="text-brand-dark text-lg lg:text-xl xl:text-[22px] xl:leading-8 font-bold font-manrope 3xl:text-[25px] 3xl:leading-9">Naturally Seasonal Products</h2>
+                            <p class="text-brand-muted text-sm leading-7 lg:text-15px xl:text-base pb-0.5 mt-1.5 lg:mt-2.5 xl:mt-3">Order now for fresh and natural , 100 % chemical-free, organic seasonal produce—safe and healthy!</p>
+                        </div>
+                        <div class="grid-cols-7 gap-3 md:grid lg:grid-cols-5 2xl:grid-cols-7 lg:gap-5 xl:gap-7">
+                            <div class="md:sticky md:top-20 lg:top-24 md:h-[600px] lg:h-[690px] 3xl:h-auto col-span-3 lg:col-span-2 mb-3 md:mb-0">
+                                <div class="h-auto overflow-hidden border-2 border-yellow-200 rounded-md 3xl:h-full shadow-card">
+                                    <h2 class="bg-yellow-200 text-center font-bold text-brand-dark font-manrope p-2.5 text-15px lg:text-base">Deals of the week</h2>
+                                    <article class="flex flex-col justify-between group cursor-pointer relative px-5 lg:px-7 pt-4 lg:pt-5 pb-6 lg:pb-8">
+                                        <div class="">
+                                            <div class="relative shrink-0">
+                                                <div class="relative flex justify-center mx-auto overflow-hidden">
+                                                    <img alt="Product Image" loading="lazy" width="350" height="350" decoding="async" data-nimg="1" class="object-cover bg-fill-thumbnail" style="color:transparent;width:auto" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct.a24fd757.png&amp;w=384&amp;q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct.a24fd757.png&amp;w=750&amp;q=100 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct.a24fd757.png&amp;w=750&amp;q=100"/>
+                                                </div>
+                                                <div class="w-full h-full absolute top-0 z-10 -mx-0.5 sm:-mx-1">
+                                                    <span class="text-[11px] md:text-xs font-bold text-brand-light uppercase inline-block bg-[#fd5473] rounded-full px-2.5 py-[5px] pb-1 mx-0.5 sm:mx-1">Most Popular</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col pb-5 lg:pb-6 mb-0.5 lg:pt-3 h-full text-center">
+                                                <div class="-mx-1 mb-1 lg:mb-2.5">
+                                                    <span class="inline-block mx-1 text-xl font-semibold xl:text-2xl text-brand-dark"></span>
+                                                </div>
+                                                <h2 class="text-sm leading-5 text-brand-dark lg:text-15px xl:text-base sm:leading-6"></h2>
+                                            </div>
+                                        </div>
+                                        <span class="flex items-center justify-center text-base xl:text-lg text-brand-dark text-opacity-50 font-semibold -mx-2.5">
+                                            <span class="flex items-center justify-center min-w-[40px] md:min-w-[50px] min-h-[36px] md:min-h-[40px] bg-fill-three text-brand-dark rounded p-1 mx-1 md:mx-1.5 lg:mx-2.5">02</span>
+                                            :<span class="flex items-center justify-center min-w-[40px] md:min-w-[50px] min-h-[36px] md:min-h-[40px] bg-fill-three text-brand-dark rounded p-1 mx-1 md:mx-1.5 lg:mx-2.5">18</span>
+                                            :<span class="flex items-center justify-center min-w-[40px] md:min-w-[50px] min-h-[36px] md:min-h-[40px] bg-fill-three text-brand-dark rounded p-1 mx-1 md:mx-1.5 lg:mx-2.5">40</span>
+                                            :<span class="flex items-center justify-center min-w-[40px] md:min-w-[50px] min-h-[36px] md:min-h-[40px] bg-fill-three text-brand-dark rounded p-1 mx-1 md:mx-1.5 lg:mx-2.5">00</span>
+                                        </span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 col-span-4 gap-3 lg:col-span-3 2xl:col-span-5 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 md:gap-4 2xl:gap-5">
+                                <svg aria-labelledby="popular-product-0-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-0-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-0-diff)" style="fill:url(#popular-product-0-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-0-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-0-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-1-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-1-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-1-diff)" style="fill:url(#popular-product-1-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-1-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-1-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-2-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-2-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-2-diff)" style="fill:url(#popular-product-2-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-2-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-2-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-3-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-3-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-3-diff)" style="fill:url(#popular-product-3-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-3-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-3-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-4-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-4-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-4-diff)" style="fill:url(#popular-product-4-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-4-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-4-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-5-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-5-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-5-diff)" style="fill:url(#popular-product-5-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-5-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-5-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-6-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-6-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-6-diff)" style="fill:url(#popular-product-6-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-6-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-6-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-7-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-7-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-7-diff)" style="fill:url(#popular-product-7-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-7-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-7-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-8-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-8-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-8-diff)" style="fill:url(#popular-product-8-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-8-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-8-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg aria-labelledby="popular-product-9-aria" role="img" width="226" height="320" viewBox="0 0 226 320" class="w-full h-auto shadow-card rounded-md overflow-hidden">
+                                    <title id="popular-product-9-aria">Loading...</title>
+                                    <rect role="presentation" x="0" y="0" width="100%" height="100%" clip-path="url(#popular-product-9-diff)" style="fill:url(#popular-product-9-animated-diff)"></rect>
+                                    <defs>
+                                        <clipPath id="popular-product-9-diff">
+                                            <rect x="0" y="0" rx="0" ry="0" width="226" height="185"></rect>
+                                            <rect x="18" y="203" rx="3" ry="3" width="79" height="8"></rect>
+                                            <rect x="18" y="236" rx="3" ry="3" width="195" height="5"></rect>
+                                            <rect x="18" y="258" rx="3" ry="3" width="100" height="5"></rect>
+                                            <rect x="18" y="287" rx="3" ry="3" width="79" height="5"></rect>
+                                        </clipPath>
+                                        <linearGradient id="popular-product-9-animated-diff" gradientTransform="translate(-2 0)">
+                                            <stop offset="0%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <stop offset="50%" stop-color="#E7ECF3" stop-opacity="1"></stop>
+                                            <stop offset="100%" stop-color="#F3F6FA" stop-opacity="1"></stop>
+                                            <animateTransform attributeName="gradientTransform" type="translate" values="-2 0; 0 0; 2 0" dur="2s" repeatCount="indefinite"></animateTransform>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12 lg:mb-14 xl:mb-16 2xl:mb-20">
+                    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 xl:gap-5 3xl:gap-7">
+                        <div class="mx-auto w-full overflow-hidden rounded">
+                            <a class="h-full group flex justify-center relative overflow-hidden" href="/en/search">
+                                <img alt="Have a Safe Delivery" width="965" height="420" decoding="async" data-nimg="1" class="bg-fill-thumbnail object-cover w-full" style="color:transparent" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-8.png&amp;w=1080&amp;q=100 1x, /_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-8.png&amp;w=2048&amp;q=100 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-8.png&amp;w=2048&amp;q=100"/>
+                                <div class="absolute top-0 block w-1/2 h-full transform -skew-x-12 ltr:-left-full rtl:-right-full z-5 bg-gradient-to-r from-transparent to-white opacity-30 group-hover:animate-shine"></div>
+                            </a>
+                        </div>
+                        <div class="mx-auto w-full overflow-hidden rounded">
+                            <a class="h-full group flex justify-center relative overflow-hidden" href="/en/search">
+                                <img alt="Let&#x27;s stop Covid-19" width="965" height="420" decoding="async" data-nimg="1" class="bg-fill-thumbnail object-cover w-full" style="color:transparent" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-9.png&amp;w=1080&amp;q=100 1x, /_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-9.png&amp;w=2048&amp;q=100 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fbanner-9.png&amp;w=2048&amp;q=100"/>
+                                <div class="absolute top-0 block w-1/2 h-full transform -skew-x-12 ltr:-left-full rtl:-right-full z-5 bg-gradient-to-r from-transparent to-white opacity-30 group-hover:animate-shine"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-fill-two overflow-hidden bg-cover bg-top pt-1.5 md:pt-0" style="background-image:url(/assets/images/app-bg.png)">
+                <div class=" md:flex justify-between max-w-[1920px] mx-auto px-4 sm:px-5 md:px-6 lg:px-16 xl:px-28 2xl:px-32  3xl:px-40">
+                    <div class="shrink-0 mx-auto md:ltr:ml-0 md:rtl:mr-0 lg:flex lg:items-center pb-5 pt-1.5 md:pt-4 max-w-[350px] md:max-w-[340px] lg:max-w-[485px] xl:max-w-[540px] 2xl:max-w-[680px] 3xl:ltr:pl-10 3xl:rtl:pr-10">
+                        <div class="py-8 mb-1 text-center xl:py-10 2xl:py-16 md:ltr:text-left md:rtl:text-right">
+                            <h2 class="text-[22px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[42px] leading-9 lg:leading-[1.4em] xl:leading-[1.45em] text-brand-dark font-bold font-manrope -tracking-[0.2px] mb-3 lg:mb-4">Make your online shop easier with our mobile app</h2>
+                            <p class="text-15px xl:text-base 2xl:text-[17px] leading-7 xl:leading-9 text-brand-dark text-opacity-70 pb-5 lg:pb-7 ltr:pr-0 rtl:pl-0 xl:ltr:pr-8 xl:rtl:pl-8 2xl:ltr:pr-20 2xl:rtl:pl-20">Farm2Bag makes online grocery shopping fast and easy. Get groceries delivered and order the best of seasonal farm fresh food.</p>
+                            <div class="flex justify-center md:justify-start -mx-1 md:-mx-1.5 pt-0.5 px-7 sm:px-0">
+                                <a class="inline-flex transition duration-200 ease-in hover:box-shadow hover:opacity-80 mx-1 md:mx-1.5" href="https://apps.apple.com/ca/app/farm2bag-com/id6449624498">
+                                    <img alt="App Store" loading="lazy" width="170" height="56" decoding="async" data-nimg="1" class="rounded-md w-36 lg:w-44 xl:w-auto aspect-[170/56]" style="color:transparent" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fapp-store.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fapp-store.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fapp-store.png&amp;w=384&amp;q=75"/>
+                                </a>
+                                <a class="inline-flex transition duration-200 ease-in hover:box-shadow hover:opacity-80 mx-1 md:mx-1.5" href="https://play.google.com/store/apps/details?id=com.farm2bag">
+                                    <img alt="Play Store" loading="lazy" width="170" height="56" decoding="async" data-nimg="1" class="rounded-md w-36 lg:w-44 xl:w-auto aspect-[170/56]" style="color:transparent" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fplay-store.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fplay-store.png&amp;w=384&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fplay-store.png&amp;w=384&amp;q=75"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-end ltr:pl-4 rtl:pr-4 2xl:ltr:pl-0 2xl:rtl:pr-0 md:max-w-[450px] lg:max-w-[660px] xl:max-w-auto ltr:-mr-10 rtl:-ml-10 lg:ltr:-mr-16 lg:rtl:-ml-16 xl:ltr:-mr-10 xl:rtl:-ml-10 3xl:ltr:mr-7 3xl:rtl:ml-7">
+                        <img alt="App Thumbnail" loading="lazy" width="660" height="465" decoding="async" data-nimg="1" style="color:transparent;width:auto" srcSet="/_next/image?url=%2Fassets%2Fimages%2Fapp-thumbnail-2.png&amp;w=750&amp;q=100 1x, /_next/image?url=%2Fassets%2Fimages%2Fapp-thumbnail-2.png&amp;w=1920&amp;q=100 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fapp-thumbnail-2.png&amp;w=1920&amp;q=100"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-[50px] lg:mt-14 2xl:mt-16">
+        <div class="mx-auto max-w-[1920px] px-4 md:px-6 lg:px-8 2xl:px-10">
+            <div class="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 pb-[50px]">
+                <div class="pb-10 sm:pb-0 mb-4 border-b col-span-full sm:col-span-1 md:col-span-3 sm:border-b-0 border-border-three sm:mb-0">
+                    <div class="flex flex-col text-center sm:ltr:text-left sm:rtl:text-right max-w-[300px] mx-auto sm:ltr:ml-0 sm:rtl:mr-0 pb-6 sm:pb-5">
+                        <a class="inline-block focus:outline-none max-w-[131px] w-full mx-auto mb-3 lg:mb-5 sm:ltr:ml-0 sm:rtl:mr-0" href="/">
+                            <img alt="Farm2Bag" loading="eager" width="1800" height="600" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=1920&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=3840&amp;q=75 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20with%20text%20png.32343519.png&amp;w=3840&amp;q=75"/>
+                        </a>
+                        <p class="text-brand-muted text-sm leading-7 lg:leading-[27px] lg:text-15px">Farm2Bag connects you directly with farmers, delivering fresh, healthy, and preservative-free food straight from farm to your bag.</p>
+                    </div>
+                    <ul class="flex flex-wrap justify-center mx-auto sm:justify-start">
+                        <li class="transition hover:opacity-80 last:ltr:mr-0 md:ltr:mr-5 md:mx-0 ltr:mr-4 last:rtl:ml-0 rtl:ml-4 md:rtl:ml-5">
+                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/farm2bag">
+                                <img alt="facebook" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="transform scale-85 md:scale-100" style="color:transparent;width:auto" src="/assets/images/social/facebook.svg"/>
+                            </a>
+                        </li>
+                        <li class="transition hover:opacity-80 last:ltr:mr-0 md:ltr:mr-5 md:mx-0 ltr:mr-4 last:rtl:ml-0 rtl:ml-4 md:rtl:ml-5">
+                            <a target="_blank" rel="noreferrer" href="https://x.com/farm2bag">
+                                <img alt="twitter" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="transform scale-85 md:scale-100" style="color:transparent;width:auto" src="/assets/images/social/twitter.svg"/>
+                            </a>
+                        </li>
+                        <li class="transition hover:opacity-80 last:ltr:mr-0 md:ltr:mr-5 md:mx-0 ltr:mr-4 last:rtl:ml-0 rtl:ml-4 md:rtl:ml-5">
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/farm2bag/">
+                                <img alt="instagram" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="transform scale-85 md:scale-100" style="color:transparent;width:auto" src="/assets/images/social/instagram.svg"/>
+                            </a>
+                        </li>
+                        <li class="transition hover:opacity-80 last:ltr:mr-0 md:ltr:mr-5 md:mx-0 ltr:mr-4 last:rtl:ml-0 rtl:ml-4 md:rtl:ml-5">
+                            <a target="_blank" rel="noreferrer" href="https://youtube.com/@farm2bag?si=1U_FvBs8rRMrm8wa">
+                                <img alt="youtube" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="transform scale-85 md:scale-100" style="color:transparent;width:auto" src="/assets/images/social/youtube.svg"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pb-3.5 sm:pb-0 col-span-1 md:col-span-2">
+                    <h3 class="text-brand-dark text-base lg:text-[17px] lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5">About Us</h3>
+                    <ul class="flex flex-col space-y-3 text-sm lg:text-15px">
+                        <li class="flex items-baseline">
+                            <a class="transition-colors duration-200 hover:text-brand-dark" href="/en/about-us">About us</a>
+                        </li>
+                        <li class="flex items-baseline">
+                            <a class="transition-colors duration-200 hover:text-brand-dark" href="/en/contact-us">Contact us</a>
+                        </li>
+                        <li class="flex items-baseline">
+                            <a class="transition-colors duration-200 hover:text-brand-dark" href="/en/about-us">About team</a>
+                        </li>
+                        <li class="flex items-baseline">
+                            <a class="transition-colors duration-200 hover:text-brand-dark" href="/en/contact-us">Customer Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pb-3.5 sm:pb-0 col-span-1 md:col-span-2">
+                    <h3 class="text-brand-dark text-base lg:text-[17px] lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5">Our Information</h3>
+                    <ul class="flex flex-col space-y-3 text-sm lg:text-15px">
+                        <li class="flex items-baseline">
+                            <a class="transition-colors duration-200 hover:text-brand-dark" href="/en/privacy">Privacy policy update</a>
+                        </li>
+                        <li class="flex items-baseline">
+                            <a class="transition-colors duration-200 hover:text-brand-dark" href="/en/terms">Terms &amp;conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col pt-8 border-t col-span-full sm:col-span-1 md:col-start-4 xl:col-start-auto md:col-span-4 xl:col-span-3 xl:ltr:pl-6 xl:rtl:pr-6 sm:pt-0 sm:border-t-0 border-border-three 2xl:ltr:pl-7 2xl:rtl:pr-7 3xl:ltr:pl-16 3xl:rtl:pr-16">
+                    <h3 class="text-brand-dark text-base lg:text-[17px] lg:leading-7 font-medium mb-4 lg:mb-6 lg:pb-0.5">Subscribe Now</h3>
+                    <p class="text-brand-muted text-sm leading-7 lg:leading-[27px] lg:text-15px lg:-mt-1 max-w-[400px]">Subscribe your email for newsletter and featured news based on your interest</p>
+                    <form noValidate="" class="relative mt-5 max-w-[400px]">
+                        <span class="flex items-center absolute ltr:left-0 rtl:right-0 top-0 h-12 px-3.5 transform">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 2xl:w-[18px] h-4 2xl:h-[18px]">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M16.3125 2.25H1.68751C0.75696 2.25 0 3.00696 0 3.93751V14.0625C0 14.9931 0.75696 15.75 1.68751 15.75H16.3125C17.243 15.75 18 14.9931 18 14.0625V3.93751C18 3.00696 17.243 2.25 16.3125 2.25ZM16.3125 3.375C16.3889 3.375 16.4616 3.39085 16.5281 3.41854L9 9.94319L1.47188 3.41854C1.53834 3.39089 1.61105 3.375 1.68747 3.375H16.3125ZM16.3125 14.625H1.68751C1.37715 14.625 1.125 14.3729 1.125 14.0625V4.60711L8.6314 11.1127C8.73743 11.2044 8.86872 11.25 9 11.25C9.13128 11.25 9.26256 11.2044 9.3686 11.1127L16.875 4.60711V14.0625C16.875 14.3729 16.6228 14.625 16.3125 14.625Z" fill="#B3B3B3"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        <div class="w-full">
+                            <input id="subscription-email" type="email" placeholder="Write your email here" class="py-2 px-4 w-full appearance-none transition duration-150 ease-in-out border text-input text-13px lg:text-sm font-body rounded placeholder-[#B3B3B3] min-h-12 transition duration-200 ease-in-out text-brand-dark focus:ring-0 text-brand-dark border-border-two focus:border-2 focus:outline-none focus:border-brand h-11 md:h-12 ltr:pl-10 rtl:pr-10 2xl:px-11 h-12 rounded-md text-[16px]" autoComplete="off" spellCheck="false" aria-invalid="false" name="email"/>
+                        </div>
+                        <button class="absolute ltr:right-0 rtl:left-0 top-0 hover:opacity-80 focus:outline-none h-12 px-3 lg:px-3.5 transform scale-90 2xl:scale-100" aria-label="Subscribe Button">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[18px] 2xl:w-5 h-[18px] 2xl:h-5 rtl:rotate-180">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M18.809 8.21633L2.67252 1.52062C1.99272 1.23851 1.22471 1.36262 0.668264 1.84434C0.111818 2.32613 -0.120916 3.06848 0.0609589 3.78164L1.49725 9.41414H8.52951C8.85311 9.41414 9.11549 9.67648 9.11549 10.0001C9.11549 10.3237 8.85315 10.5861 8.52951 10.5861H1.49725L0.0609589 16.2186C-0.120916 16.9318 0.111779 17.6741 0.668264 18.1559C1.22584 18.6386 1.99393 18.7611 2.67256 18.4796L18.809 11.7839C19.5437 11.4791 20.0001 10.7955 20.0001 10.0001C20.0001 9.20469 19.5437 8.52113 18.809 8.21633Z" fill="#02B290"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="20" height="20" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pb-20 lg:pb-7">
+            <div class="mx-auto max-w-[1920px] px-4 md:px-6 lg:px-8 2xl:px-10">
+                <div class="flex flex-col pt-6 text-center border-t md:flex-row md:justify-between border-border-three lg:pt-7">
+                    <p class="text-brand-dark text-sm leading-7 lg:leading-[27px] lg:text-15px">
+                        © 
+                        <!-- -->
+                        Copyright
+                        <!-- -->
+                        <!-- -->
+                        2025
+                        <!-- -->
+                        <a class="transition-colors duration-200 ease-in-out text-brand-dark hover:text-brand" href="https://farm2bag.com">Farm2Bag</a>
+                        <!-- -->
+                        All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="lg:hidden fixed z-30 -bottom-0.5 flex items-center justify-between shadow-bottomNavigation body-font bg-brand-light w-full h-14 px-4 md:px-6 lg:px-8 text-brand-muted pb-0.5">
+        <button class="relative flex items-center justify-center h-auto shrink-0 focus:outline-none" aria-label="Search Button">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M19.0144 17.9256L13.759 12.6703C14.777 11.4129 15.3899 9.81507 15.3899 8.07486C15.3899 4.04156 12.1081 0.759766 8.07483 0.759766C4.04152 0.759766 0.759766 4.04152 0.759766 8.07483C0.759766 12.1081 4.04156 15.3899 8.07486 15.3899C9.81507 15.3899 11.4129 14.777 12.6703 13.759L17.9256 19.0144C18.0757 19.1645 18.2728 19.24 18.47 19.24C18.6671 19.24 18.8642 19.1645 19.0144 19.0144C19.3155 18.7133 19.3155 18.2266 19.0144 17.9256ZM8.07486 13.8499C4.89009 13.8499 2.2998 11.2596 2.2998 8.07483C2.2998 4.89006 4.89009 2.29976 8.07486 2.29976C11.2596 2.29976 13.8499 4.89006 13.8499 8.07483C13.8499 11.2596 11.2596 13.8499 8.07486 13.8499Z" fill="currentColor"></path>
+            </svg>
+        </button>
+        <div>
+            <a class="shrink-0" href="/en">
+                <span class="sr-only">Home</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="20px" viewBox="0 0 17.996 20.442">
+                    <path d="M48.187,7.823,39.851.182A.7.7,0,0,0,38.9.2L31.03,7.841a.7.7,0,0,0-.211.5V19.311a.694.694,0,0,0,.694.694H37.3A.694.694,0,0,0,38,19.311V14.217h3.242v5.095a.694.694,0,0,0,.694.694h5.789a.694.694,0,0,0,.694-.694V8.335a.7.7,0,0,0-.228-.512ZM47.023,18.617h-4.4V13.522a.694.694,0,0,0-.694-.694H37.3a.694.694,0,0,0-.694.694v5.095H32.2V8.63l7.192-6.98L47.02,8.642v9.975Z" transform="translate(-30.619 0.236)" fill="currentColor" stroke="currentColor" stroke-width="0.4"></path>
+                </svg>
+            </a>
+        </div>
+        <div>
+            <!--$!-->
+            <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+            <!--/$-->
+        </div>
+        <div>
+            <!--$!-->
+            <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template>
+            <!--/$-->
+        </div>
+    </div>
+</div>
+</div>
