@@ -1,5 +1,5 @@
 const express = require("express");
-const Search = require("../models/searchSchema");
+const Search = require("../models/SearchHistory");
 const router = express.Router();
 
 router.post("/save", async (req, res) => {

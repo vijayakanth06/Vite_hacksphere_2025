@@ -20,14 +20,14 @@ function Register() {
     }
   };
 
-  return (
+  return (<div><br/><br/>
     <form onSubmit={handleSubmit}>
       <input type="text" name="username" placeholder="Username" onChange={handleChange} /><br/>
       <input type="email" name="email" placeholder="Email" onChange={handleChange} /><br/>
       <input type="password" name="password" placeholder="Password" onChange={handleChange} /><br/>
-      <button type="submit">Register</button>
+      <button type="submit">Register</button><br/>
       <button onClick={() => window.location.href = "/login"}>Login</button>
-    </form>
+    </form></div>
   );
 }
 
